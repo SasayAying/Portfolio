@@ -4,14 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Efren Gabriel Aying - AI Developer</title>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-     <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Efren Gabriel Aying - AI Developer</title>
-    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="bg-gradient"></div>
@@ -21,6 +14,7 @@
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -49,6 +43,44 @@
         <div class="about-content">
             <p>I'm Efren Gabriel Aying, a passionate BSIT student at University of Cebu Main Campus specializing in AI-powered solutions and full-stack web development. I focus on creating intelligent systems that solve real-world problems.</p>
             <p>With expertise in React, Node.js, MongoDB, and AI technologies like NLP, I build innovative applications that bridge the gap between technology and user needs, helping students and professionals achieve their goals.</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2 class="section-title">Education</h2>
+        <div class="education-timeline">
+            <div class="education-item">
+                <div class="education-year">2022 - Present</div>
+                <div class="education-content">
+                    <h3>Bachelor of Science in Information Technology</h3>
+                    <p class="education-school">University of Cebu Main Campus</p>
+                    <p class="education-level">College</p>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="education-year">2020 - 2022</div>
+                <div class="education-content">
+                    <h3>TVL-ICT</h3>
+                    <p class="education-school">University of Cebu Pri Campus</p>
+                    <p class="education-level">Senior High School</p>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="education-year">2016 - 2020</div>
+                <div class="education-content">
+                    <h3>Junior High School</h3>
+                    <p class="education-school">Mabolo Christian Academy</p>
+                    <p class="education-level">Secondary Education</p>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="education-year">2010 - 2016</div>
+                <div class="education-content">
+                    <h3>Elementary</h3>
+                    <p class="education-school">Mabolo Elementary School</p>
+                    <p class="education-level">Primary Education</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -123,7 +155,7 @@
             <div class="contact-info">
                 <div class="contact-item">
                     <span>📧</span>
-                    <a href="Gmail:ayjesus057@gmail.com">ayjesus057@gmail.com</a>
+                    <a href="mailto:ayjesus057@gmail.com">ayjesus057@gmail.com</a>
                 </div>
                 <div class="contact-item">
                     <span>🐙</span>
@@ -134,115 +166,104 @@
     </section>
 
     <script type="module">
-    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
-    Chatbot.init({
-        chatflowid: "b1b18960-2ce9-4b56-a540-9748e6939f0c",
-        apiHost: "https://cloud.flowiseai.com",
-    })
-</script>
-
- <!-- Add this before closing </body> tag in your portfolio -->
-<script type="module">
-    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
-    Chatbot.init({
-        chatflowid: "b1b18960-2ce9-4b56-a540-9748e6939f0c",
-        apiHost: "https://cloud.flowiseai.com",
-        theme: {
-            button: {
-                backgroundColor: '#667eea',
-                right: 20,
-                bottom: 20,
-                size: 56,
-                dragAndDrop: true,
-                iconColor: 'white',
-                customIconSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
-                autoWindowOpen: {
-                    autoOpen: false,
-                    openDelay: 0,
-                    autoOpenOnMobile: false
-                }
-            },
-            tooltip: {
-                showTooltip: true,
-                tooltipMessage: 'Ask me about Efren! 💬',
-                tooltipBackgroundColor: '#667eea',
-                tooltipTextColor: 'white',
-                tooltipFontSize: 14
-            },
-            disclaimer: {
-                title: 'Welcome! 👋',
-                message: 'I\'m an AI assistant that can answer questions about Efren Gabriel Aying\'s skills, projects, and experience. Feel free to ask me anything!',
-                textColor: '#1a1a1a',
-                buttonColor: '#667eea',
-                buttonText: 'Start Chatting',
-                buttonTextColor: 'white',
-                blurredBackgroundColor: 'rgba(102, 126, 234, 0.1)',
-                backgroundColor: 'white'
-            },
-            chatWindow: {
-                showTitle: true,
-                showAgentMessages: true,
-                title: 'Efren\'s AI Assistant',
-                titleAvatarSrc: 'https://cdn-icons-png.flaticon.com/512/4712/4712027.png',
-                welcomeMessage: 'Hi! I\'m Efren\'s AI assistant powered by Cohere AI. Ask me about his skills, projects, experience, or how to contact him!',
-                errorMessage: 'Sorry, I\'m having trouble connecting. Please try again in a moment.',
-                backgroundColor: '#ffffff',
-                height: 600,
-                width: 400,
-                fontSize: 14,
-                starterPrompts: [
-                    "What are Efren's technical skills?",
-                    "Tell me about his projects",
-                    "What's his experience with AI?",
-                    "How can I contact him?",
-                    "Tell me about ResuMate project",
-                    "What is Efren studying?"
-                ],
-                starterPromptFontSize: 13,
-                clearChatOnReload: false,
-                sourceDocsTitle: 'Sources:',
-                renderHTML: true,
-                botMessage: {
-                    backgroundColor: '#f0f4ff',
-                    textColor: '#1a1a1a',
-                    showAvatar: true,
-                    avatarSrc: 'https://cdn-icons-png.flaticon.com/512/4712/4712027.png'
-                },
-                userMessage: {
+        import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+        Chatbot.init({
+            chatflowid: "b1b18960-2ce9-4b56-a540-9748e6939f0c",
+            apiHost: "https://cloud.flowiseai.com",
+            theme: {
+                button: {
                     backgroundColor: '#667eea',
-                    textColor: '#ffffff',
-                    showAvatar: true,
-                    avatarSrc: 'https://cdn-icons-png.flaticon.com/512/3177/3177440.png'
+                    right: 20,
+                    bottom: 20,
+                    size: 56,
+                    dragAndDrop: true,
+                    iconColor: 'white',
+                    customIconSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
+                    autoWindowOpen: {
+                        autoOpen: false,
+                        openDelay: 0,
+                        autoOpenOnMobile: false
+                    }
                 },
-                textInput: {
-                    placeholder: 'Ask me anything about Efren...',
-                    backgroundColor: '#ffffff',
+                tooltip: {
+                    showTooltip: true,
+                    tooltipMessage: 'Ask me about Efren! 💬',
+                    tooltipBackgroundColor: '#667eea',
+                    tooltipTextColor: 'white',
+                    tooltipFontSize: 14
+                },
+                disclaimer: {
+                    title: 'Welcome! 👋',
+                    message: 'I\'m an AI assistant that can answer questions about Efren Gabriel Aying\'s skills, projects, and experience. Feel free to ask me anything!',
                     textColor: '#1a1a1a',
-                    sendButtonColor: '#667eea',
-                    maxChars: 500,
-                    maxCharsWarningMessage: 'Message is too long. Please keep it under 500 characters.',
-                    autoFocus: false,
-                    sendMessageSound: false,
-                    receiveMessageSound: false
+                    buttonColor: '#667eea',
+                    buttonText: 'Start Chatting',
+                    buttonTextColor: 'white',
+                    blurredBackgroundColor: 'rgba(102, 126, 234, 0.1)',
+                    backgroundColor: 'white'
                 },
-                feedback: {
-                    color: '#667eea'
-                },
-                dateTimeToggle: {
-                    date: false,
-                    time: false
-                },
-                footer: {
-                    textColor: '#999999',
-                    text: 'Powered by',
-                    company: 'Cohere AI',
-                    companyLink: 'https://cohere.com/'
+                chatWindow: {
+                    showTitle: true,
+                    showAgentMessages: true,
+                    title: 'Efren\'s AI Assistant',
+                    titleAvatarSrc: 'https://cdn-icons-png.flaticon.com/512/4712/4712027.png',
+                    welcomeMessage: 'Hi! I\'m Efren\'s AI assistant powered by Cohere AI. Ask me about his skills, projects, experience, or how to contact him!',
+                    errorMessage: 'Sorry, I\'m having trouble connecting. Please try again in a moment.',
+                    backgroundColor: '#ffffff',
+                    height: 600,
+                    width: 400,
+                    fontSize: 14,
+                    starterPrompts: [
+                        "What are Efren's technical skills?",
+                        "Tell me about his projects",
+                        "What's his experience with AI?",
+                        "How can I contact him?",
+                        "Tell me about ResuMate project",
+                        "What is Efren studying?"
+                    ],
+                    starterPromptFontSize: 13,
+                    clearChatOnReload: false,
+                    sourceDocsTitle: 'Sources:',
+                    renderHTML: true,
+                    botMessage: {
+                        backgroundColor: '#f0f4ff',
+                        textColor: '#1a1a1a',
+                        showAvatar: true,
+                        avatarSrc: 'https://cdn-icons-png.flaticon.com/512/4712/4712027.png'
+                    },
+                    userMessage: {
+                        backgroundColor: '#667eea',
+                        textColor: '#ffffff',
+                        showAvatar: true,
+                        avatarSrc: 'https://cdn-icons-png.flaticon.com/512/3177/3177440.png'
+                    },
+                    textInput: {
+                        placeholder: 'Ask me anything about Efren...',
+                        backgroundColor: '#ffffff',
+                        textColor: '#1a1a1a',
+                        sendButtonColor: '#667eea',
+                        maxChars: 500,
+                        maxCharsWarningMessage: 'Message is too long. Please keep it under 500 characters.',
+                        autoFocus: false,
+                        sendMessageSound: false,
+                        receiveMessageSound: false
+                    },
+                    feedback: {
+                        color: '#667eea'
+                    },
+                    dateTimeToggle: {
+                        date: false,
+                        time: false
+                    },
+                    footer: {
+                        textColor: '#999999',
+                        text: 'Powered by',
+                        company: 'Cohere AI',
+                        companyLink: 'https://cohere.com/'
+                    }
                 }
             }
-        }
-    })
-</script>
-<script src="Aying AI Chatflow.json"></script>
+        })
+    </script>
 </body>
-</html>
-</head>
+</html> 
