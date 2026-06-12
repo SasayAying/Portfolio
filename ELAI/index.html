@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Efren Gabriel Aying - AI Developer</title>
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="bg-gradient"></div>
 
+    <!-- ── NAV ── -->
     <nav>
         <div class="logo">EGA Portfolio</div>
         <ul class="nav-links">
@@ -19,30 +20,73 @@
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        <!-- Hamburger (mobile) -->
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
     </nav>
 
+    <!-- Mobile drawer -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- ── HERO ── -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <div class="hero-text">
+            <div class="hero-text reveal">
                 <h1>Hi, I'm <span class="gradient-text">Efren Gabriel Aying</span></h1>
-                <p>A passionate AI Developer & Creative Professional specializing in building innovative solutions with cutting-edge technology. I transform ideas into reality through code and design.</p>
+                <!-- Typing animation target -->
+                <p class="hero-subtitle">A passionate <span class="typed-text"></span><span class="typed-cursor">|</span></p>
                 <div class="cta-buttons">
                     <a href="#projects" class="btn btn-primary">View Projects</a>
                     <a href="#contact" class="btn btn-secondary">Contact Me</a>
                 </div>
             </div>
-            <div class="hero-image">
+            <div class="hero-image reveal reveal-delay-1">
                 <div class="img-glow"></div>
-                <img src="image/IMAGE2.jpg" alt="Efren Gabriel Aying" class="profile-img">
+                <img src="image/IMAGE1.jpg" alt="Efren Gabriel Aying" class="profile-img">
+            </div>
+        </div>
+
+        <!-- Stats bar -->
+        <div class="stats-bar reveal reveal-delay-2">
+            <div class="stat-item">
+                <span class="stat-number" data-target="3">0</span>
+                <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="4">0</span>
+                <span class="stat-label">Years Studying</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="8">0</span>
+                <span class="stat-label">Tech Skills</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="1">0</span>
+                <span class="stat-label">SAP Training</span>
             </div>
         </div>
     </section>
 
+    <!-- ── ABOUT ── -->
     <section id="about">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-            <p>I'm Efren Gabriel Aying, a passionate BSIT student at University of Cebu Main Campus specializing in AI-powered solutions and full-stack web development. I focus on creating intelligent systems that solve real-world problems.</p>
-            <p>With expertise in React, Node.js, MongoDB, and AI technologies like NLP, I build innovative applications that bridge the gap between technology and user needs, helping students and professionals achieve their goals.</p>
+        <h2 class="section-title reveal">About Me</h2>
+        <div class="about-content reveal">
+            <p>I'm Efren Gabriel Aying, a BSIT student at University of Cebu Main Campus with a genuine interest in how technology can be used to solve everyday problems. I enjoy working on real-world tasks from building web apps and setting up systems to exploring how AI can make things smarter and more useful.</p>
+            <p>I'm still growing, and that's what drives me. Whether it's picking up a new framework, collaborating on a team project, or learning from professionals in the field, I show up ready to contribute and keep improving. My goal is to build a solid foundation in IT that I can carry into a meaningful career.</p>
             <div class="about-details">
                 <div class="about-detail-item">
                     <span class="detail-icon">📍</span>
@@ -64,10 +108,11 @@
         </div>
     </section>
 
+    <!-- ── EDUCATION ── -->
     <section id="education">
-        <h2 class="section-title">Education</h2>
+        <h2 class="section-title reveal">Education</h2>
         <div class="education-timeline">
-            <div class="education-item">
+            <div class="education-item reveal">
                 <div class="education-year">2022 - 2026</div>
                 <div class="education-content">
                     <h3>Bachelor of Science in Information Technology</h3>
@@ -76,7 +121,7 @@
                     <p class="education-level">College</p>
                 </div>
             </div>
-            <div class="education-item">
+            <div class="education-item reveal">
                 <div class="education-year">2020 - 2022</div>
                 <div class="education-content">
                     <h3>TVL-ICT — Information and Communications Technology</h3>
@@ -85,7 +130,7 @@
                     <p class="education-level">Senior High School</p>
                 </div>
             </div>
-            <div class="education-item">
+            <div class="education-item reveal">
                 <div class="education-year">2016 - 2020</div>
                 <div class="education-content">
                     <h3>Junior High School</h3>
@@ -94,7 +139,7 @@
                     <p class="education-level">Secondary Education</p>
                 </div>
             </div>
-            <div class="education-item">
+            <div class="education-item reveal">
                 <div class="education-year">2009 - 2016</div>
                 <div class="education-content">
                     <h3>Elementary</h3>
@@ -106,91 +151,92 @@
         </div>
     </section>
 
+    <!-- ── SKILLS ── -->
     <section id="skills">
-        <h2 class="section-title">Skills & Expertise</h2>
+        <h2 class="section-title reveal">Skills & Expertise</h2>
 
-        <h3 class="skills-subtitle">Technical Skills</h3>
+        <h3 class="skills-subtitle reveal">Technical Skills</h3>
         <div class="skills-grid">
-            <div class="skill-card">
+            <div class="skill-card reveal">
                 <div class="skill-icon">🤖</div>
                 <h3>AI & Machine Learning</h3>
                 <p>Flowise AI, LangChain, OpenAI, Custom AI Solutions, Natural Language Processing</p>
             </div>
-            <div class="skill-card">
+            <div class="skill-card reveal">
                 <div class="skill-icon">💻</div>
                 <h3>Web Development</h3>
                 <p>React, Node.js, HTML/CSS, JavaScript, TypeScript, Modern Frameworks</p>
             </div>
-            <div class="skill-card">
+            <div class="skill-card reveal">
                 <div class="skill-icon">🎨</div>
                 <h3>UI/UX & Graphic Design</h3>
                 <p>Responsive Design, User Experience, Modern Aesthetics, Adobe Photoshop — image editing and visual design</p>
             </div>
-            <div class="skill-card">
+            <div class="skill-card reveal">
                 <div class="skill-icon">☁️</div>
                 <h3>Cloud & APIs</h3>
                 <p>API Integration, Cloud Services, Database Management, DevOps</p>
             </div>
-            <div class="skill-card">
+            <div class="skill-card reveal">
                 <div class="skill-icon">🖥️</div>
                 <h3>IT Support & Systems</h3>
                 <p>Basic troubleshooting, hardware and software installation, system maintenance, technical documentation</p>
             </div>
-            <div class="skill-card">
+            <div class="skill-card reveal">
                 <div class="skill-icon">🌐</div>
                 <h3>Networking</h3>
                 <p>Cisco networking fundamentals — network configuration, basic routing & switching, and network troubleshooting</p>
             </div>
-            <div class="skill-card">
+            <div class="skill-card reveal">
                 <div class="skill-icon">📊</div>
                 <h3>Productivity & Data</h3>
                 <p>Microsoft Word, Excel (data entry, formulas, basic functions), PowerPoint, basic data organization, analysis, and reporting</p>
             </div>
-            <div class="skill-card">
+            <div class="skill-card reveal">
                 <div class="skill-icon">🏢</div>
                 <h3>ERP & SAP</h3>
                 <p>SAP ABAP programming trained at Accenture — ABAP development, SAP system navigation, and enterprise application fundamentals</p>
             </div>
         </div>
 
-        <h3 class="skills-subtitle personal-skills-label">Personal Skills</h3>
+        <h3 class="skills-subtitle personal-skills-label reveal">Personal Skills</h3>
         <div class="personal-skills-grid">
-            <div class="personal-skill-item">
+            <div class="personal-skill-item reveal">
                 <span class="personal-skill-icon">🗣️</span>
                 <div>
                     <h4>Communication</h4>
                     <p>Good verbal and written communication skills, with the ability to listen, understand instructions, and share information clearly</p>
                 </div>
             </div>
-            <div class="personal-skill-item">
+            <div class="personal-skill-item reveal">
                 <span class="personal-skill-icon">🔄</span>
                 <div>
                     <h4>Adaptability</h4>
                     <p>Willing to learn and able to adjust to new tasks, tools, and work environments quickly</p>
                 </div>
             </div>
-            <div class="personal-skill-item">
+            <div class="personal-skill-item reveal">
                 <span class="personal-skill-icon">🤝</span>
                 <div>
                     <h4>Teamwork</h4>
                     <p>Works well in a team, cooperative and open to collaboration with peers and supervisors</p>
                 </div>
             </div>
-            <div class="personal-skill-item">
+            <div class="personal-skill-item reveal">
                 <span class="personal-skill-icon">🧠</span>
                 <div>
                     <h4>Critical Thinking</h4>
                     <p>Able to analyze situations and make sound decisions based on available information</p>
                 </div>
             </div>
-            <div class="personal-skill-item">
+            <div class="personal-skill-item reveal">
                 <span class="personal-skill-icon">⏰</span>
                 <div>
                     <h4>Time Management</h4>
                     <p>Able to prioritize tasks and meet deadlines efficiently</p>
                 </div>
             </div>
-            <div class="personal-skill-item">
+            <div class="personal-skill-item reveal">
                 <span class="personal-skill-icon">🧘</span>
                 <div>
                     <h4>Patience & Composure</h4>
@@ -200,10 +246,11 @@
         </div>
     </section>
 
+    <!-- ── PROJECTS ── -->
     <section id="projects">
-        <h2 class="section-title">Featured Projects</h2>
+        <h2 class="section-title reveal">Featured Projects</h2>
         <div class="projects-grid">
-            <div class="project-card">
+            <div class="project-card reveal">
                 <h3>AI Chatbot Platform</h3>
                 <p>Built an intelligent chatbot using Flowise AI that handles customer inquiries with natural language processing and contextual understanding.</p>
                 <div class="project-tech">
@@ -212,7 +259,7 @@
                     <span class="tech-tag">React</span>
                 </div>
             </div>
-            <div class="project-card">
+            <div class="project-card reveal">
                 <h3>Portfolio Website</h3>
                 <p>Interactive portfolio featuring real-time AI assistance, smooth animations, and modern design principles for optimal user experience.</p>
                 <div class="project-tech">
@@ -221,7 +268,7 @@
                     <span class="tech-tag">AI Integration</span>
                 </div>
             </div>
-            <div class="project-card">
+            <div class="project-card reveal">
                 <div class="project-card-header">
                     <h3>ResuMate</h3>
                     <a href="https://app.resumate.ph/" target="_blank" class="project-live-btn">
@@ -241,12 +288,11 @@
         </div>
     </section>
 
+    <!-- ── CONTACT ── -->
     <section id="contact">
-        <h2 class="section-title">Get In Touch</h2>
-        <div class="contact-content">
-            <p>
-                I'm always interested in hearing about new projects and opportunities. Feel free to reach out!
-            </p>
+        <h2 class="section-title reveal">Get In Touch</h2>
+        <div class="contact-content reveal">
+            <p>I'm always interested in hearing about new projects and opportunities. Feel free to reach out!</p>
             <div class="contact-info">
                 <div class="contact-item">
                     <span>📧</span>
@@ -268,8 +314,7 @@
         </div>
     </section>
 
-
-
+    <!-- ── FLOWISE CHATBOT ── -->
     <script type="module">
         import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed@latest/dist/web.js"
         Chatbot.init({
@@ -277,18 +322,11 @@
             apiHost: "https://flowise-production-e802.up.railway.app",
             theme: {
                 button: {
-                    backgroundColor: '#667eea',
-                    right: 20,
-                    bottom: 20,
-                    size: 48,
-                    dragAndDrop: true,
-                    iconColor: 'white',
+                    backgroundColor: '#6C7FEE',
+                    right: 20, bottom: 20, size: 48,
+                    dragAndDrop: true, iconColor: 'white',
                     customIconSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
-                    autoWindowOpen: {
-                        autoOpen: false,
-                        openDelay: 2,
-                        autoOpenOnMobile: false
-                    }
+                    autoWindowOpen: { autoOpen: false, openDelay: 2, autoOpenOnMobile: false }
                 },
                 tooltip: {
                     showTooltip: true,
@@ -298,56 +336,145 @@
                     tooltipFontSize: 16
                 },
                 chatWindow: {
-                    showTitle: true,
-                    title: 'EGA Assistant',
+                    showTitle: true, title: 'EGA Assistant',
                     titleAvatarSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
                     welcomeMessage: 'Hello! How can I help you learn more about Efren?',
-                    backgroundColor: '#1a1a1a',
-                    height: 600,
-                    width: 400,
-                    fontSize: 16,
-                    starterPrompts: [
-                        "What projects has Efren worked on?",
-                        "Tell me about Efren's skills"
-                    ],
-                    botMessage: {
-                        backgroundColor: '#2a2a2a',
-                        textColor: '#ffffff',
-                        showAvatar: true,
-                        avatarSrc: 'https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/parroticon.png'
-                    },
-                    userMessage: {
-                        backgroundColor: '#667eea',
-                        textColor: '#ffffff',
-                        showAvatar: true,
-                        avatarSrc: 'https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png'
-                    },
-                    textInput: {
-                        placeholder: 'Ask me anything...',
-                        backgroundColor: '#2a2a2a',
-                        textColor: '#ffffff',
-                        sendButtonColor: '#667eea'
-                    },
-                    footer: {
-                        textColor: '#a0a0a0',
-                        text: 'Powered by',
-                        company: 'Flowise',
-                        companyLink: 'https://flowiseai.com'
-                    }
+                    backgroundColor: '#0e0e1a', height: 600, width: 400, fontSize: 16,
+                    starterPrompts: ["What projects has Efren worked on?", "Tell me about Efren's skills"],
+                    botMessage: { backgroundColor: '#12121f', textColor: '#ffffff', showAvatar: true, avatarSrc: 'https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/parroticon.png' },
+                    userMessage: { backgroundColor: '#6C7FEE', textColor: '#ffffff', showAvatar: true, avatarSrc: 'https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png' },
+                    textInput: { placeholder: 'Ask me anything...', backgroundColor: '#12121f', textColor: '#ffffff', sendButtonColor: '#6C7FEE' },
+                    footer: { textColor: '#8888aa', text: 'Powered by', company: 'Flowise', companyLink: 'https://flowiseai.com' }
                 }
             }
         })
+    </script>
 
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+    <!-- ── MAIN SCRIPTS ── -->
+    <script>
+    (function () {
+
+        /* ── 1. SMOOTH SCROLL ── */
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                // close mobile menu if open
+                closeMobileMenu();
             });
         });
+
+        /* ── 2. ACTIVE NAV ON SCROLL ── */
+        const sections  = document.querySelectorAll('section[id]');
+        const navLinks  = document.querySelectorAll('.nav-links a, .mobile-menu a');
+        const sectionObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === '#' + entry.target.id) link.classList.add('active');
+                    });
+                }
+            });
+        }, { threshold: 0.35 });
+        sections.forEach(s => sectionObserver.observe(s));
+
+        /* ── 3. SCROLL-REVEAL ── */
+        const reveals = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver(entries => {
+            entries.forEach((entry, i) => {
+                if (entry.isIntersecting) {
+                    // stagger siblings slightly
+                    const siblings = Array.from(entry.target.parentElement.querySelectorAll('.reveal'));
+                    const idx = siblings.indexOf(entry.target);
+                    entry.target.style.transitionDelay = (idx * 60) + 'ms';
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+        reveals.forEach(el => revealObserver.observe(el));
+
+        /* ── 4. TYPING ANIMATION ── */
+        const roles = [
+            'AI Developer.',
+            'Web Developer.',
+            'UI/UX Designer.',
+            'Problem Solver.',
+            'BSIT Student.'
+        ];
+        const typedEl  = document.querySelector('.typed-text');
+        const cursorEl = document.querySelector('.typed-cursor');
+        let roleIdx = 0, charIdx = 0, deleting = false;
+
+        function type() {
+            const current = roles[roleIdx];
+            if (!deleting) {
+                typedEl.textContent = current.slice(0, ++charIdx);
+                if (charIdx === current.length) {
+                    deleting = true;
+                    setTimeout(type, 1800);
+                    return;
+                }
+            } else {
+                typedEl.textContent = current.slice(0, --charIdx);
+                if (charIdx === 0) {
+                    deleting = false;
+                    roleIdx = (roleIdx + 1) % roles.length;
+                }
+            }
+            setTimeout(type, deleting ? 55 : 90);
+        }
+        setTimeout(type, 800);
+
+        /* ── 5. COUNTER ANIMATION (stats bar) ── */
+        const counters = document.querySelectorAll('.stat-number');
+        const counterObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                const el     = entry.target;
+                const target = +el.dataset.target;
+                const duration = 1200;
+                const step   = Math.ceil(duration / target);
+                let current  = 0;
+                const timer  = setInterval(() => {
+                    current++;
+                    el.textContent = current;
+                    if (current >= target) clearInterval(timer);
+                }, step);
+                counterObserver.unobserve(el);
+            });
+        }, { threshold: 0.5 });
+        counters.forEach(c => counterObserver.observe(c));
+
+        /* ── 6. HAMBURGER MENU ── */
+        const hamburger   = document.querySelector('.hamburger');
+        const mobileMenu  = document.getElementById('mobileMenu');
+        const mobileOverlay = document.getElementById('mobileOverlay');
+
+        function openMobileMenu() {
+            hamburger.classList.add('open');
+            mobileMenu.classList.add('open');
+            mobileOverlay.classList.add('open');
+            hamburger.setAttribute('aria-expanded', 'true');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMobileMenu() {
+            hamburger.classList.remove('open');
+            mobileMenu.classList.remove('open');
+            mobileOverlay.classList.remove('open');
+            hamburger.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = '';
+        }
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.contains('open') ? closeMobileMenu() : openMobileMenu();
+        });
+        mobileOverlay.addEventListener('click', closeMobileMenu);
+
+    })();
     </script>
 </body>
 </html>
